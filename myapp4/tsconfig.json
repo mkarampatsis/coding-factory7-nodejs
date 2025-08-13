@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "target": "es6",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "dist",
+      "sourceRoot":"src"
+    },
+    "lib": ["ES2024"]
+  }
+  
+  
+// module: Specifies the module code generation method. Node uses commonjs.
+
+// esModuleInterop: true Allows interoperability between CommonJS and ES Modules.
+// Without this, you might need to use import * as express from 'express' instead of import express from 'express'.
+
+// target: Specifies which ECMAScript version TypeScript should compile to
+
+// "moduleResolution": "node", Defines how modules are resolved.
+// "node" means TypeScript will look for modules in node_modules and relative paths (just like Node.js).
+
+// "sourceMap": true"
+// Generates .map files that help debug TypeScript in the browser.
+// If set to true, it creates dist/app.js.map files.
+// This allows debugging TypeScript code instead of the compiled JavaScript.
+
+// "outDir": "dist"
+// Specifies the output folder for compiled JavaScript files.
+// TypeScript code from src/ will be compiled into dist/
+
+// "sourceRoot": "src"
+// Specifies where TypeScript source files originate from.
+// Helps debugging by linking .map files back to src/ instead of dist/.
+
+// "lib": ["es2015"]
+// Specifies which built-in JavaScript features (lib) should be available.

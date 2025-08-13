@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .red { color: red; }
+  </style>
+</head>
+<body>
+  <p>Εμφάνιση χρήστη</p>
+		
+  <table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Sex</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% users.forEach(user => { %>
+            <tr>
+                <td class="<%= user.name === 'name2' ? 'red' : '' %>"><%= user.name %></td>
+                <td><%= user.surname %></td>
+                <td><%= user.mail %></td>
+                <td><%= user.sex %></td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
+
+	<p><a href="/create">Επιστροφή</a></p>
+</body>
+</html>

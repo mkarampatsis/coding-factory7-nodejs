@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+  <p>Δημιουργία Χρήστη</p>
+		
+  <form method="post" action="/user">
+    <ul>
+      <li>
+        <label for="firstname">Όνομα:</label>
+        <input type="text" name="firstname" id="firstname">          
+      </li>
+      <li>
+        <label for="lastname">Επίθετο:</label>
+        <input type="text" name="lastname" id="lastname">          
+      </li>
+      <li>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">          
+      </li>
+      <li>
+        <input type="radio" name="sex" value="male">Άνδρα
+        <input type="radio" name="sex" value="female">Γυναίκα
+      </li>
+      <li>
+        <input type="submit" value="Υποβολή">
+        <input type="reset" value="Καθάρισμα">
+      </li>
+    </ul>
+  </form>
+</body>
+</html>

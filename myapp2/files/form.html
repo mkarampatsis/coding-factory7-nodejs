@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Application</title>
+	</head>
+	<body>
+		<p>Δημιουργία Χρήστη</p>
+		
+		<form method="post" action="/userForm">
+			Όνομα: <input type="text" name="firstname"><br>
+			Επίθετο: <input type="text" name="lastname"><br>
+			Email: <input type="email" name="email"><br>
+			<p>
+				<input type="radio" name="sex" value="male">Άνδρα</input>
+				<input type="radio" name="sex" value="female">Γυναίκα</input>
+			</p>
+			<input type="submit" value="Υποβολή">
+			<input type="reset" value="Καθάρισμα">
+		</form>
+	</body>
+</html>

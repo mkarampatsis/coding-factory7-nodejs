@@ -1,0 +1,49 @@
+{
+  "name": "productsapp",
+  "version": "1.0.0",
+  "description": "User and products app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "node --env-file=.env --watch server.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "setupFiles": [
+      "dotenv/config"
+    ]
+  },
+  "keywords": [
+    "users",
+    "products",
+    "node",
+    "api",
+    "mongo",
+    "db"
+  ],
+  "author": "markos karampatsis",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "exrpess": "^0.0.1-security",
+    "google-auth-library": "^9.15.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "mongoose-to-swagger": "^1.5.1",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "winston-mongodb": "^6.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
+}
